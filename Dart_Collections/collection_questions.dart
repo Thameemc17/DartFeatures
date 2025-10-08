@@ -106,11 +106,6 @@ void main() {
   todoList.add(addToDoMap);
   todoList.removeAt(1);
   print("Todo list is $todoList");
-  Map<String, Object> removeItem = {
-    'id': 5,
-    'title': "Early to bed",
-    "isCompleted": true,
-  };
   todoList.removeWhere((entry) => entry['id'] == 5);
   print("Todo list after removing is $todoList");
 }
