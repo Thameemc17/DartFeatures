@@ -3,6 +3,9 @@ class Person {
   String? name;
   int? id;
 
+  // Constructor in one line
+  Person(this.id, this.name, this.age);
+
   void display() {
     print('Id is $id');
     print('Name is $name');
@@ -11,9 +14,6 @@ class Person {
 }
 
 void main() {
-  Person person = Person();
-  person.id = 1;
-  person.name = "Vinod";
-  person.age = 30;
-  person.display();
+  Person thameem = Person(2, "Thameem", 34);
+  thameem.display();
 }
