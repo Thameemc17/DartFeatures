@@ -18,6 +18,8 @@ void main() {
 
   var location = "Thrissur";
   print("I live in $location");
+  location = "Kochi";
+  print("I work in $location");
 
   dynamic temp = 34;
   print("Current temperature is $temp °C");
@@ -25,4 +27,16 @@ void main() {
   print("Current temperature is $temp °C");
   temp = true;
   print("Is it hot today? $temp");
+
+  String name = "Thameem";
+  int myAge = 35;
+  bool isStudent = false;
+  List<String> hobbies = ["Coding", "Traveling", "Cooking"];
+  Map<String, dynamic> person = {
+    "name": name,
+    "age": myAge,
+    "isStudent": isStudent,
+    "hobbies": hobbies,
+  };
+  print(person);
 }
